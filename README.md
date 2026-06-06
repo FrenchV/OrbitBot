@@ -1,88 +1,64 @@
-# OrbitBot 🌌
+# OrbitBot
 
-OrbitBot is a Slack bot that brings NASA’s most beautiful space imagery directly into your workspace. It delivers the Astronomy Picture of the Day and other space visuals with simple slash commands, making space exploration accessible and engaging.
+OrbitBot is a Slack bot built with Bolt for JavaScript that adds fun space-themed interactions to your workspace.
 
----
+## Features
 
-## 🚀 Features
+- /nasapic, /spacepic, /apod: Fetch NASA Astronomy Picture of the Day with rich Slack formatting
+- /dsb-catfact: Sends a random cat fact to the channel
+- /orbitcatfact: Alias for the cat fact command
+- /orbitoracle <question>: Cosmic yes/no style answer
+- /orbitfact: Sends a quick space fact
+- /orbitping: Checks bot responsiveness
+- /orbitlaunch: Plays a staged launch animation effect in Slack
+- /orbithelp: Shows available commands
+- App mentions: Reply with a space fact when mentioned with the word "fact"
 
-* `/spacepic` → Get NASA Astronomy Picture of the Day
-* Displays image, title, and explanation
-* Clean Slack message formatting
-* Real-time NASA API integration
-* Lightweight and fast response system
+## Tech Stack
 
----
+- Node.js
+- @slack/bolt
+- axios
+- dotenv
 
-## 🧠 How It Works
+## Setup
 
-OrbitBot connects Slack commands to NASA’s public API. When a user requests an image, the bot fetches the latest space data and returns a formatted message with the image and description.
-
----
-
-## 🛠️ Tech Stack
-
-* Python
-* Flask
-* Slack API
-* NASA Open API
-* Requests library
-
----
-
-## ⚙️ Setup
-
-### 1. Clone the repo
+1. Install dependencies
 
 ```bash
-git clone ..
-cd orbitbot
+npm install
 ```
 
-### 2. Install dependencies
+2. Create a .env file
+
+```env
+SLACK_BOT_TOKEN=xoxb-your-bot-token
+SLACK_APP_TOKEN=xapp-your-app-level-token
+NASA_API_KEY=your-nasa-api-key
+```
+
+3. Run the bot
 
 ```bash
-pip install -r requirements.txt
+node index.js
 ```
 
-### 3. Create `.env`
+## Slack App Notes
 
-```
-SLACK_BOT_TOKEN=your-slack-token
-SLACK_SIGNING_SECRET=your-secret
-NASA_API_KEY=your-nasa-key
-```
+- Enable Socket Mode
+- Add slash commands matching the bot handlers:
+  - /nasapic
+  - /spacepic
+  - /apod
+  - /dsb-catfact
+  - /orbitcatfact
+  - /orbitoracle
+  - /orbitfact
+  - /orbitping
+  - /orbitlaunch
+  - /orbithelp
+- Subscribe to bot events and include app_mention
 
-### 4. Run the bot
+## NASA API
 
-```bash
-python app.py
-```
-
-### 5. Expose server (for Slack)
-
-```bash
-ngrok http 3000
-```
-
----
-
-## 📡 NASA API Used
-
-* Astronomy Picture of the Day (APOD):
-  https://api.nasa.gov/planetary/apod
-
----
-
-## 🌌 Future Improvements
-
-* Mars rover image explorer
-* Daily automated space drops
-* Image history tracking
-* Interactive space categories
-
----
-
-## 📜 License
-
-Open source for educational use.
+- APOD endpoint: https://api.nasa.gov/planetary/apod
