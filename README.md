@@ -1,6 +1,6 @@
-# OrbitGlow 🌌
+# OrbitBot 🌌
 
-OrbitGlow is a Slack bot that brings NASA’s most beautiful space imagery directly into your workspace. It delivers the Astronomy Picture of the Day and other space visuals with simple slash commands, making space exploration accessible and engaging.
+OrbitBot is a Slack bot that brings NASA’s most beautiful space imagery directly into your workspace. It delivers the Astronomy Picture of the Day and other space visuals with simple slash commands, making space exploration accessible and engaging.
 
 ---
 
@@ -16,7 +16,7 @@ OrbitGlow is a Slack bot that brings NASA’s most beautiful space imagery direc
 
 ## 🧠 How It Works
 
-OrbitGlow connects Slack commands to NASA’s public API. When a user requests an image, the bot fetches the latest space data and returns a formatted message with the image and description.
+OrbitBot connects Slack commands to NASA’s public API. When a user requests an image, the bot fetches the latest space data and returns a formatted message with the image and description.
 
 ---
 
@@ -35,8 +35,8 @@ OrbitGlow connects Slack commands to NASA’s public API. When a user requests a
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/yourusername/orbitglow
-cd orbitglow
+git clone ..
+cd orbitbot
 ```
 
 ### 2. Install dependencies
