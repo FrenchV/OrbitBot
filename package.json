@@ -1,0 +1,25 @@
+{
+  "name": "orbitbot",
+  "version": "1.0.0",
+  "description": "OrbitBot is a Slack bot that brings NASA’s most beautiful space imagery directly into your workspace. It delivers the Astronomy Picture of the Day and other space visuals with simple slash commands, making space exploration accessible and engaging.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrenchV/OrbitBot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FrenchV/OrbitBot/issues"
+  },
+  "homepage": "https://github.com/FrenchV/OrbitBot#readme",
+  "dependencies": {
+    "@slack/bolt": "^4.7.3",
+    "axios": "^1.17.0",
+    "dotenv": "^17.4.2"
+  }
+}
