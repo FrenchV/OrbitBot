@@ -236,10 +236,6 @@ app.command("/nasapic", async ({ ack, respond }) => {
   await sendNasaPic(respond);
 });
 
-app.command("/spacepic", async ({ ack, respond }) => {
-  await ack();
-  await sendNasaPic(respond);
-});
 
 app.command("/apod", async ({ ack, respond }) => {
   await ack();
@@ -330,7 +326,6 @@ app.command("/orbithelp", async ({ ack, respond }) => {
               type: "mrkdwn",
               text:
                 "• */nasapic* - NASA Astronomy Picture of the Day\n" +
-                "• */dsb-catfact* - Random cat fact transmission\n" +
                 "• */orbitcatfact* - Random cat fact transmission alias\n" +
                 "• */orbitoracle <question>* - Cosmic yes/no answer\n" +
                 "• */orbitfact* - Quick space fact\n" +

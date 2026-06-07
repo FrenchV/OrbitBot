@@ -4,15 +4,13 @@ OrbitBot is a Slack bot built with Bolt for JavaScript that adds fun space-theme
 
 ## Features
 
-- /nasapic, /spacepic, /apod: Fetch NASA Astronomy Picture of the Day with rich Slack formatting
-- /dsb-catfact: Sends a random cat fact to the channel
+- /nasapic: Fetch NASA Astronomy Picture of the Day with rich Slack formatting
 - /orbitcatfact: Alias for the cat fact command
 - /orbitoracle <question>: Cosmic yes/no style answer
 - /orbitfact: Sends a quick space fact
 - /orbitping: Checks bot responsiveness
 - /orbitlaunch: Plays a staged launch animation effect in Slack
 - /orbithelp: Shows available commands
-- App mentions: Reply with a space fact when mentioned with the word "fact"
 
 ## Tech Stack
 
@@ -48,9 +46,6 @@ node index.js
 - Enable Socket Mode
 - Add slash commands matching the bot handlers:
   - /nasapic
-  - /spacepic
-  - /apod
-  - /dsb-catfact
   - /orbitcatfact
   - /orbitoracle
   - /orbitfact
